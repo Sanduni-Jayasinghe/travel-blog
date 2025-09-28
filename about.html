@@ -1,9 +1,107 @@
-<html>
-   <head>
-    <title>About Page</title>
-   </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sanduni Jayasinghe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: url("background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fefafa;
+        }
 
-   <body>
-    <h1>Welcome Sanduni</h1>
-   </body>
+        .overlay {
+            background: rgba(255, 255, 255, 0.2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .card {
+            background:  rgba(2, 85, 113, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #e9ecee;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #f1f906;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        ul li {
+            padding: 8px;
+            background: #fcfbfb;
+            margin: 6px 0;
+            border-radius: 6px;
+            color: #090000;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #0e0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="card">
+            <img src="pp.jpg" alt="My Profile Photo">
+            <h1>Sanduni Jayasinghe</h1>
+
+            <section>
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate traveler who loves exploring new cultures, trying different foods, and discovering hidden gems around the world. Traveling helps me grow, learn, and make memories that last a lifetime.</p>
+            </section>
+
+            <section>
+                <h2>My Travel Interests</h2>
+                <ul>
+                    <li>Backpacking and hiking</li>
+                    <li>Exploring ancient ruins</li>
+                    <li>Trying local street food</li>
+                    <li>Beach adventures</li>
+                    <li>Photography</li>
+                </ul>
+            </section>
+
+            <footer>
+                <p>📧 sandunilakshika008@gmail.com | 📞 +94 76 525 5863</p>
+            </footer>
+        </div>
+    </div>
+</body>
 </html>

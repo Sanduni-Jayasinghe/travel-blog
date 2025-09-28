@@ -1,8 +1,130 @@
-<html>
-    <head>
-        <title>Destinations Page</title>
-    </head>
-    <body>
-        <h1>Welcome & Good Morning</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.2); /* soft overlay for readability */
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ed0505;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        .destination {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .destination img {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            color: #990707;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .content h3 {
+            margin-top: 15px;
+            color: #0a76e2;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .destination {
+                flex-direction: column;
+            }
+            .destination img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>My Travel Destinations</h1>
+
+        <div class="destination">
+            <img src="paris.jpg" alt="Eiffel Tower in Paris">
+            <div class="content">
+                <h2>Paris, France</h2>
+                <p>The city of lights, love, and art. Paris is famous for its iconic landmarks, rich history, and delicious pastries.</p>
+                <h3>Highlights:</h3>
+                <ul>
+                    <li>Visiting the Eiffel Tower</li>
+                    <li>Exploring the Louvre Museum</li>
+                    <li>Walking along the Seine River</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="destination">
+            <img src="tokyo.jpg" alt="Tokyo City View">
+            <div class="content">
+                <h2>Tokyo, Japan</h2>
+                <p>A perfect blend of tradition and technology. Tokyo is an exciting city full of culture, cuisine, and neon lights.</p>
+                <h3>Highlights:</h3>
+                <ul>
+                    <li>Exploring ancient temples</li>
+                    <li>Tasting authentic sushi</li>
+                    <li>Shopping in Shibuya</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="destination">
+            <img src="sigiriya.jpg" alt="Sigiriya Rock Fortress">
+            <div class="content">
+                <h2>Sigiriya, Sri Lanka</h2>
+                <p>Known as the Lion Rock, Sigiriya is a UNESCO World Heritage site surrounded by breathtaking landscapes.</p>
+                <h3>Highlights:</h3>
+                <ul>
+                    <li>Climbing the rock fortress</li>
+                    <li>Exploring the gardens</li>
+                    <li>Learning about Sri Lankan history</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
